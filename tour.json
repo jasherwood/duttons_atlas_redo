@@ -15,7 +15,7 @@
             "hotSpotDebug": true,
             "hotSpots": [
                 {
-                    "pitch": 0,
+                    "pitch": -2.2,
                     "yaw": -153,
                     "type": "scene",
                     "text": "Exhibit Wall",
@@ -29,16 +29,10 @@
 		    "sceneId": "nook"
                 },
                 {
-                    "pitch": 7,
-                    "yaw": 1,
+                    "pitch": 5,
+                    "yaw": 182,
                     "type": "info",
-                    "text": "The Hub moved to Hayden Library in early 2020, as part of the major renovation of ASU's main library building" 
-                },
-                {
-                    "pitch": 8,
-                    "yaw": 120,
-                    "type": "info",
-                    "text": "We use these mobile display panels to showcase maps as a \"pop-up\" map exhibit"
+                    "text": "Description of hotspot goes here" 
                 }
             ]
         },
@@ -65,13 +59,6 @@
                     "yaw": 22,
                     "type": "info",
                     "text": "Description of hotspot goes here"
-                },
- 
-                {
-                    "pitch": 8,
-                    "yaw": 60,
-                    "type": "info",
-                    "text": "This mounted work is a pseudo-color elevation map of the Greater Grand Canyon region"
                 }
             ]
         },
@@ -90,10 +77,10 @@
             "sceneId": "face"
           },
 	  {
-	    "pitch": 12,
-	    "yaw": -25,
+	    "pitch": 4,
+	    "yaw": 125,
 	    "type": "info",
-	    "text": "These decals are actually contour lines of Camelback Mountain, an iconic mountain located in the heart of metro Phoenix"
+	    "text": "Description of hotspot goes here"
 	  }
         ]
       }
