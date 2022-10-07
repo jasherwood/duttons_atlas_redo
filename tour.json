@@ -19,14 +19,14 @@
                     "type": "scene",
                     "text": "Exhibit Wall",
                     "sceneId": "wall", 
-			"cssClass": "custom-hotspot"
+			        "cssClass": "custom-hotspot"
                 },
                 {
                     "pitch": -2.2,
                     "yaw": 157,
                     "type": "scene",
-		    "text": "Exhibit Nook",
-		    "sceneId": "nook"
+		            "text": "Exhibit Nook",
+		            "sceneId": "nook"
                 },
                 {
                     "pitch": 5,
@@ -48,10 +48,10 @@
                 {
                     "pitch": 0.3,
                     "yaw": 156,
-		    "hfov": 120,
+                    "hfov": 120,
                     "type": "scene",
- 		    "text": "Exhibit Face",
-		    "sceneId": "face"       
+                    "text": "Exhibit Face",
+                    "sceneId": "face"       
                 },
                 {
                     "pitch": 18,
