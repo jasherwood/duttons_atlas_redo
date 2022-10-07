@@ -77,14 +77,14 @@
         },
 		"wall": {
         "title": "Exhibit Wall",
-        "yaw": 0,
+        "yaw": -189,
         "type": "equirectangular",
         "panorama": "img/wall.jpg",
         "hotSpotDebug": true,
         "hotSpots": [
           {
-            "pitch": 8,
-            "yaw": 20,
+            "pitch": -1.5,
+            "yaw": 123,
             "type": "scene",
             "text": "Exhibit Face",
             "sceneId": "face"
