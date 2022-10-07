@@ -118,9 +118,6 @@ font-family: 'Merriweather', serif;
 }
 
 .esri-widget {
-  box-sizing: border-box;
-  color: black;
-  background-color: red;
+  color: #50433d;
   display: flex;
-  min-height: 2px;
   }
