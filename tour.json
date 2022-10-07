@@ -25,8 +25,8 @@
                     "pitch": -2.2,
                     "yaw": 154,
                     "type": "scene",
-					"text": "Exhibit Nook",
-					"sceneId": "nook"
+		    "text": "Exhibit Nook",
+		    "sceneId": "nook"
                 },
                 {
                     "pitch": 7,
@@ -45,9 +45,9 @@
 
         "nook": {
             "title": "Exhibit Nook",
-            "hfov": 190,
-            "yaw": 5,
-            "pitch": 1,
+            "hfov": 120,
+            "yaw": -1.6,
+            "pitch": -4,
             "type": "equirectangular",
             "panorama": "img/nook.jpg",
             "hotSpotDebug": true,
@@ -56,15 +56,15 @@
                     "pitch": 8,
                     "yaw": 20,
                     "type": "scene",
- 					"text": "Exhibit Face",
-					"sceneId": "face"       
+ 		    "text": "Exhibit Face",
+		    "sceneId": "face"       
                 },
 				 {
                     "pitch": 8,
                     "yaw": 20,
                     "type": "scene",
- 					"text": "Exhibit Wall",
-					"sceneId": "wall"       
+ 		    "text": "Exhibit Wall",
+		    "sceneId": "wall"       
                 },
                 {
                     "pitch": 27,
