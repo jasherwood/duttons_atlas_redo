@@ -18,7 +18,8 @@
                     "yaw": -153,
                     "type": "scene",
                     "text": "Exhibit Wall",
-                    "sceneId": "wall"
+                    "sceneId": "wall", 
+			"cssClass": "custom-hotspot"
                 },
                 {
                     "pitch": -2.2,
