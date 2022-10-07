@@ -1,24 +1,32 @@
 {   
     "default": {
-        "firstScene": "interior",       
+        "firstScene": "face",       
         "sceneFadeDuration": 1000,
         "autoload": true
     },
     
     "scenes": {
-        "interior": {
-            "title": "Hub Interior", 
-            "yaw": 178,
+        "face": {
+            "title": "Exhibit Face", 
+            "yaw": 180,
+            "pitch": -2,
             "type": "equirectangular",
             "panorama": "img/face.jpg",
             "hotSpotDebug": true,
             "hotSpots": [
                 {
-                    "pitch": -2.1,
-                    "yaw": 49,
+                    "pitch": -2.2,
+                    "yaw": 190,
                     "type": "scene",
-                    "text": "Hub Exterior",
-                    "sceneId": "exterior"
+                    "text": "Exhibit Wall",
+                    "sceneId": "wall"
+                },
+                {
+                    "pitch": -2.2,
+                    "yaw": 154,
+                    "type": "scene",
+					"text": "Exhibit Nook",
+					"sceneId": "nook"
                 },
                 {
                     "pitch": 7,
@@ -35,8 +43,8 @@
             ]
         },
 
-        "exterior": {
-            "title": "Hub Exterior",
+        "nook": {
+            "title": "Exhibit Nook",
             "hfov": 190,
             "yaw": 5,
             "pitch": 1,
@@ -48,8 +56,15 @@
                     "pitch": 8,
                     "yaw": 20,
                     "type": "scene",
-                    "text": "Hub Interior",
-                    "sceneId": "interior"                   
+ 					"text": "Exhibit Face",
+					"sceneId": "face"       
+                },
+				 {
+                    "pitch": 8,
+                    "yaw": 20,
+                    "type": "scene",
+ 					"text": "Exhibit Wall",
+					"sceneId": "wall"       
                 },
                 {
                     "pitch": 27,
@@ -70,6 +85,29 @@
                     "text": "This mounted work is a pseudo-color elevation map of the Greater Grand Canyon region"
                 }
             ]
-        }
+        },
+		"wall": {
+        "title": "Exhibit Wall",
+        "yaw": 0,
+        "type": "equirectangular",
+        "panorama": "img/wall.jpg",
+        "hotSpotDebug": true,
+        "hotSpots": [
+          {
+            "pitch": 0,
+            "yaw": 25,
+            "type": "scene",
+            "text": "Exhibit Nook",
+            "sceneId": "nook"
+          },
+          {
+            "pitch": 8,
+            "yaw": 20,
+            "type": "scene",
+            "text": "Exhibit Face",
+            "sceneId": "face"
+          }
+        ]
+      }
     }
 }
