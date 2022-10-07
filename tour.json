@@ -11,6 +11,7 @@
         "yaw": 26,
         "type": "equirectangular",
         "panorama": "img/face.jpg",
+        "hotSpotDebug": true,
         "hotSpots": [
           {
             "pitch": -2.1,
@@ -36,6 +37,7 @@
         "pitch": 1,
         "type": "equirectangular",
         "panorama": "img/nook.jpg",
+        "hotSpotDebug": true,
         "hotSpots": [
           {
             "pitch": 8,
@@ -64,6 +66,7 @@
         "yaw": 0,
         "type": "equirectangular",
         "panorama": "img/wall.jpg",
+        "hotSpotDebug": true,
         "hotSpots": [
           {
             "pitch": 0,
