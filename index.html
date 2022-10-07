@@ -83,14 +83,12 @@
 
     <!--Begin Container for Photo Sphere pano-->
     <!-- the viewer container must have a defined size -->
-    <div class="modal" id="viewerModal" tabindex="-1" role="dialog">
+    <div class="modal" id="viewerModal" tabindex="-1" role="dialog" aria-labelledby="viewerModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title">Tour the Dutton's Atlas Exhibit</h5> 
-              <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>         
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>         
             </div>
             <div class="modal-body" id="viewerModal">
               <iframe class ="myFrame" id="pano" width="760" height="400" allowfullscreen style="border-style:none;" src=""></iframe>
@@ -100,12 +98,12 @@
     </div>
     
     <!-- Begin Modal for the information box -->
-    <div class="modal fade" id="infoModal" tabindex="-1" role="document" aria-labelledby="infoModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="dialog">
+    <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header text-center">
               <h3 class="modal-title w-100">About the 3D Exhibit</h3>
-              <button type="button" id= "closeModal" class="btn-close closeModal" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" id= "closeModal" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <p>Welcome to the Dutton's Atlas 3D Exhibit! This digital exhibit, and its real-world counterpart, is part of a larger project called <a href="https://duttons-atlas-asu.hub.arcgis.com/" class="infolink" target="_blank">Dutton's Atlas: How Cartography Helped the Canyon Become Grand</a>.</p> 
