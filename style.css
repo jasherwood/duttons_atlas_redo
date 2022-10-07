@@ -60,6 +60,11 @@ color: #50433d;
 margin-left:auto;
 } */
 
+#close {
+  background-color: #A23617;
+  border-color: #A23617;
+}
+
 #viewerModal {
   border-radius: 0px;
   z-index: 999999999999999999999999999999999999999999999999999999999;
