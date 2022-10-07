@@ -26,7 +26,7 @@ require(["esri/WebScene", "esri/views/SceneView", "esri/widgets/Home"], function
         fillOpacity: 0,
       },
       padding: {
-        top: 40
+        top: 5
         },
         breakpoints: {
             xsmall: 768,
@@ -51,6 +51,8 @@ require(["esri/WebScene", "esri/views/SceneView", "esri/widgets/Home"], function
     
     // Removes the Zoom To button at the top of the popup. Set to true to add.
     view.popup.viewModel.includeDefaultActions = false;
+
+    view.ui.padding = 5;
 
     // Show modal on page load
     // Instead of using cookies so it doesn't show up every time, the infoModal uses session storage. When the browser is closed, the session storage key should be deleted. 
