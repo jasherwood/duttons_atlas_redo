@@ -8,7 +8,7 @@
     "scenes": {
         "interior": {
             "title": "Hub Interior", 
-            "yaw": 26,
+            "yaw": 178,
             "type": "equirectangular",
             "panorama": "img/face.jpg",
             "hotSpotDebug": true,
@@ -42,6 +42,7 @@
             "pitch": 1,
             "type": "equirectangular",
             "panorama": "img/nook.jpg",
+            "hotSpotDebug": true,
             "hotSpots": [
                 {
                     "pitch": 8,
