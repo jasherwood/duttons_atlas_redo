@@ -71,21 +71,21 @@ require(["esri/WebScene", "esri/views/SceneView", "esri/widgets/Home"], function
 
 
   // Function to rotate the map
-  // function rotate() {         
-  //   view.goTo({
-  //       heading: view.camera.heading + 0.2,
-  //       center: view.center
-  //   }, {animate: false});
-  //   // begin the rotation
-  //   var req = requestAnimationFrame(rotate);            
-  //   // when the user clicks on the pause button
-  //   pauseBtn.addEventListener('click', function(event){  
-  //     // cancel the rotation
-  //     cancelAnimationFrame(req);
-  //     $(".esri-icon-play").show(); 
-  //     $(".esri-icon-pause").hide();     
-  //   })
-  // };   
+  function rotate() {         
+    view.goTo({
+        heading: view.camera.heading + 0.2,
+        center: view.center
+    }, {animate: false});
+    // begin the rotation
+    var req = requestAnimationFrame(rotate);            
+    // when the user clicks on the pause button
+    pauseBtn.addEventListener('click', function(event){  
+      // cancel the rotation
+      cancelAnimationFrame(req);
+      $(".esri-icon-play").show(); 
+      $(".esri-icon-pause").hide();     
+    })
+  };   
 
   // Custom Buttons
   // Home button
