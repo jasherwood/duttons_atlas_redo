@@ -53,31 +53,20 @@
             "hotSpotDebug": true,
             "hotSpots": [
                 {
-                    "pitch": 8,
-                    "yaw": 20,
+                    "pitch": 0.3,
+                    "yaw": 156,
+		    "hfov": 120,
                     "type": "scene",
  		    "text": "Exhibit Face",
 		    "sceneId": "face"       
-                },
-				 {
-                    "pitch": 8,
-                    "yaw": 20,
-                    "type": "scene",
- 		    "text": "Exhibit Wall",
-		    "sceneId": "wall"       
                 },
                 {
                     "pitch": 27,
                     "yaw": 22,
                     "type": "info",
-                    "text": "The Hub is located in Hayden Library, Room 334"
+                    "text": "Description of hotspot goes here"
                 },
-                {
-                    "pitch": 12,
-                    "yaw": -25,
-                    "type": "info",
-                    "text": "These decals are actually contour lines of Camelback Mountain, an iconic mountain located in the heart of metro Phoenix"
-                },
+ 
                 {
                     "pitch": 8,
                     "yaw": 60,
@@ -94,19 +83,18 @@
         "hotSpotDebug": true,
         "hotSpots": [
           {
-            "pitch": 0,
-            "yaw": 25,
-            "type": "scene",
-            "text": "Exhibit Nook",
-            "sceneId": "nook"
-          },
-          {
             "pitch": 8,
             "yaw": 20,
             "type": "scene",
             "text": "Exhibit Face",
             "sceneId": "face"
-          }
+          },
+	  {
+	    "pitch": 12,
+	    "yaw": -25,
+	    "type": "info",
+	    "text": "These decals are actually contour lines of Camelback Mountain, an iconic mountain located in the heart of metro Phoenix"
+	  }
         ]
       }
     }
