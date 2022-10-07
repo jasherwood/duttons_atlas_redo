@@ -48,7 +48,7 @@ require(["esri/WebScene", "esri/views/SceneView", "esri/widgets/Home"], function
         },
       }
     });
-  
+    
     // Removes the Zoom To button at the top of the popup. Set to true to add.
     view.popup.viewModel.includeDefaultActions = false;
 
