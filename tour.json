@@ -10,7 +10,7 @@
         "title": "Exhibit Face",
         "yaw": 26,
         "type": "equirectangular",
-        "panorama": "img/viewerimage.jpg",
+        "panorama": "img/face.jpg",
         "hotSpots": [
           {
             "pitch": -2.1,
@@ -35,7 +35,7 @@
         "yaw": 5,
         "pitch": 1,
         "type": "equirectangular",
-        "panorama": "img/viewerimage2.jpg",
+        "panorama": "img/nook.jpg",
         "hotSpots": [
           {
             "pitch": 8,
@@ -63,7 +63,7 @@
         "title": "Exhibit Wall",
         "yaw": 0,
         "type": "equirectangular",
-        "panorama": "img/frontdesk.jpg",
+        "panorama": "img/wall.jpg",
         "hotSpots": [
           {
             "pitch": 0,
