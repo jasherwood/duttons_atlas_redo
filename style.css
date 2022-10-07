@@ -1,0 +1,94 @@
+html, body { 
+    font-family: 'Merriweather', serif !important;
+}
+
+.pnlm-title-box {
+    font-family: 'Montserrat', sans-serif !important;
+ }
+
+#viewDiv {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#logo {
+	vertical-align:middle;
+}
+
+/*Navbar height*/
+.navbar {
+    height: 56.5px;  
+  }
+
+.navbar-brand span {
+	font-size: 1.1em;
+	display:inline-block;
+	vertical-align:middle;
+}
+
+/*Navbar background color*/
+.bg-light {
+    background: #D49b72 !important;
+    border-bottom: solid 2px #D49B72;
+  } 
+
+/*Navbar link color*/
+.navbar-light .navbar-brand {
+    color: #50433d;
+    /* font-variant: small-caps; */
+  }
+
+/*Navbar link color*/
+.navbar-light .navbar-brand:visited {
+  color: #50433d;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #50433d;
+    font-size: 0.8125em;
+}
+.navbar .navbar-nav .nav-link:hover{
+    color: #50433d;
+    /* border-bottom: solid 3px #50433d;  */
+    border-bottom: solid 3px #A23617; 
+}
+
+/* .navbar-nav {
+	margin-left:auto;
+} */
+
+#viewerModal {
+    border-radius: 0px;
+    z-index: 999999999999999999999999999999999999999999999999999999999;
+  }
+
+.esri-widget {
+font-family: 'Montserrat', sans-serif;
+}
+
+/*Infobox*/
+.infolink {
+    color: #8c1d40;
+  }
+  
+  #infoModal img {
+    border: solid 1px black;
+  }
+
+  /*Information Modal*/ 
+#infoModal .modal-dialog{
+    overflow-y: initial !important
+  }
+
+#infoModal .modal-body{
+    height: 80vh;
+    overflow-y: auto;
+  }
+  
+#infoModal {
+    border-radius: 0px;
+    z-index: 999999999999999999999999999999999999999999999999999999999;
+  }
