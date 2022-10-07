@@ -55,8 +55,8 @@
 		    "sceneId": "face"       
                 },
                 {
-                    "pitch": 27,
-                    "yaw": 22,
+                    "pitch": 18,
+                    "yaw": 27,
                     "type": "info",
                     "text": "Description of hotspot goes here"
                 }
@@ -77,8 +77,8 @@
             "sceneId": "face"
           },
 	  {
-	    "pitch": 4,
-	    "yaw": 125,
+	    "pitch": 1,
+	    "yaw": -192,
 	    "type": "info",
 	    "text": "Description of hotspot goes here"
 	  }
