@@ -81,6 +81,12 @@
 	    "yaw": -192,
 	    "type": "info",
 	    "text": "Description of hotspot goes here"
+	  },
+	  {
+	    "pitch": -4,
+	    "yaw": 37,
+	    "type": "info",
+	    "text": "ERIC AND PAITYN ARE HERE"
 	  }
         ]
       }
