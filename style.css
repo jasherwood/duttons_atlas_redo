@@ -88,17 +88,23 @@ font-family: 'Merriweather', serif;
   overflow-y: auto;
 }
 
+#infoModal .modal-title{
+  font-weight: normal !important;
+  font-family: 'Merriweather', serif;
+  font-size: 1.5em
+}
+
 #infoModal {
   border-radius: 0px;
   z-index: 999999999999999999999999999999999999999999999999999999999;
 }
 
 #infoModal p {
-font-size: 0.85em;
-font-family: 'Merriweather', serif'
+  font-size: 0.85em;
+  font-family: 'Merriweather', serif
 }
 
 #infoModal ul {
-font-size: 0.85em;
-font-family: 'Merriweather', serif'
+  font-size: 0.85em;
+  font-family: 'Merriweather', serif
 }
