@@ -25,10 +25,7 @@ require(["esri/WebScene", "esri/views/SceneView", "esri/widgets/Home"], function
         color: [162, 54, 23], 
         fillOpacity: 0,
       },
-      padding: {
-        top: 52
-        },
-        breakpoints: {
+      breakpoints: {
             xsmall: 768,
             small: 769,
             medium: 992,
@@ -54,25 +51,24 @@ require(["esri/WebScene", "esri/views/SceneView", "esri/widgets/Home"], function
     // Removes the Zoom To button at the top of the popup. Set to true to add.
     view.popup.viewModel.includeDefaultActions = false;
 
-    view.ui.padding = 5;
+    view.ui.padding = 10;
 
-    // Show modal on page load
-    // Instead of using cookies so it doesn't show up every time, the infoModal uses session storage. When the browser is closed, the session storage key should be deleted. 
-    //infoModal will load again when the user opens the browser 
-     $(document).ready(function () {
-      // Check if user saw the modal
-      var key = 'hadModal',
-          hadModal = sessionStorage.getItem(key);
-      // Show the modal only if new user
-      if (!hadModal) {
-          $('#infoModal').modal('show');
-      }
-      // If modal is displayed, store that in localStorage
-      $('#infoModal').on('shown.bs.modal', function () {
-          sessionStorage.setItem(key, true);
-      })
+  // Show modal on page load
+  // Instead of using cookies so it doesn't show up every time, the infoModal uses session storage. When the browser is closed, the session storage key should be deleted. 
+  //infoModal will load again when the user opens the browser 
+    $(document).ready(function () {
+    // Check if user saw the modal
+    var key = 'openedModal',
+        hadModal = sessionStorage.getItem(key);
+    // Show the modal only if new user
+    if (!hadModal) {
+        $('#infoModal').modal('show');
+    }
+    // If modal is displayed, store that in localStorage
+    $('#infoModal').on('shown.bs.modal', function () {
+        sessionStorage.setItem(key, true);
+    })
     });
-
 
   // Function to rotate the map
   function rotate() {         
