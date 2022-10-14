@@ -25,34 +25,34 @@ require(["esri/WebScene", "esri/views/SceneView", "esri/widgets/Home"], function
         color: [162, 54, 23], 
         fillOpacity: 0,
       },
-      breakpoints: {
-            xsmall: 768,
-            small: 769,
-            medium: 992,
-            large: 1200
-            },
       popup: {
         //Docks the popup and removes the default that connects popup to item
         dockEnabled: true,
         // Disables the dock button from the popup
         dockOptions: {
+           // Positions the popup top-right until screen sizes changes. Can set to a specific location. Example: bottom-right
+          // position: "auto",
+          //Allows the docking button. Set to false if you don't want the user to dock
+          buttonEnabled: true,
           // Ignore the default sizes that trigger responsive docking
           breakpoint: false,
-          // Positions the popup top-right until screen sizes changes. Can set to a specific location. Example: bottom-right
-          position: "auto",
-          //Allows the docking button. Set to false if you don't want the user to dock
-          buttonEnabled: true, 
+          // collapseEnabled: true,
         },
       }
     });
-
-    
     
     // Removes the Zoom To button at the top of the popup. Set to true to add.
     view.popup.viewModel.includeDefaultActions = false;
 
-    view.ui.padding = 10;
 
+    // reduce popup size
+    // $(function() {            
+    //   $("body:not(.esriIsPhoneSize) #viewDiv .esri-popup.esri-popup--is-docked .esri-popup__main-container").css('padding-bottom', '5000px');                
+    // });
+
+    // Adds padding to the widgets
+    view.ui.padding = 10;
+    
   // Show modal on page load
   // Instead of using cookies so it doesn't show up every time, the infoModal uses session storage. When the browser is closed, the session storage key should be deleted. 
   //infoModal will load again when the user opens the browser 
@@ -71,21 +71,21 @@ require(["esri/WebScene", "esri/views/SceneView", "esri/widgets/Home"], function
     });
 
   // Function to rotate the map
-  function rotate() {         
-    view.goTo({
-        heading: view.camera.heading + 0.2,
-        center: view.center
-    }, {animate: false});
-    // begin the rotation
-    var req = requestAnimationFrame(rotate);            
-    // when the user clicks on the pause button
-    pauseBtn.addEventListener('click', function(event){  
-      // cancel the rotation
-      cancelAnimationFrame(req);
-      $(".esri-icon-play").show(); 
-      $(".esri-icon-pause").hide();     
-    })
-  };   
+  // function rotate() {         
+  //   view.goTo({
+  //       heading: view.camera.heading + 0.2,
+  //       center: view.center
+  //   }, {animate: false});
+  //   // begin the rotation
+  //   var req = requestAnimationFrame(rotate);            
+  //   // when the user clicks on the pause button
+  //   pauseBtn.addEventListener('click', function(event){  
+  //     // cancel the rotation
+  //     cancelAnimationFrame(req);
+  //     $(".esri-icon-play").show(); 
+  //     $(".esri-icon-pause").hide();     
+  //   })
+  // };   
 
   // Custom Buttons
   // Home button
