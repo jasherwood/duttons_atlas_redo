@@ -8,10 +8,8 @@ html, body {
 
 #viewDiv {
   position:fixed;
-  top: 0;
-  bottom: 0;
   padding: 0;
-  margin-top: 52px;
+  margin: 0;
   height: 100%;
   width: 100%;
 }
@@ -20,10 +18,10 @@ html, body {
 vertical-align:middle;
 }
 
-/*Navbar height*/
-.navbar {
+/*Navbar height. If used, disables the collapse links*/
+/* .navbar {
   height: 52px;  
-}
+} */
 
 .navbar-brand span {
 font-size: 1 em;
@@ -57,9 +55,15 @@ color: #50433d;
   border-bottom: solid 3px #A23617; 
 }
 
-/* .navbar-nav {
-margin-left:auto;
-} */
+/* Set the border color to the desired color */
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2880, 67, 61, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");  
+}
+
+.navbar-light .navbar-toggler{
+  border-color: #50433d;
+}
+
 
 #close {
   background-color: #A23617;
@@ -69,10 +73,6 @@ margin-left:auto;
 #viewerModal {
   border-radius: 0px;
   z-index: 999999999999999999999999999999999999999999999999999999999;
-}
-
-.esri-widget {
-font-family: 'Merriweather', serif;
 }
 
 /*Infobox*/
@@ -122,4 +122,18 @@ font-family: 'Merriweather', serif;
 .esri-widget {
   color: #50433d;
   display: flex;
+  font-family: 'Merriweather', serif;
   }
+
+  /* Esri Popup controls  */
+#viewDiv .esri-popup.esri-popup--is-docked .esri-popup__main-container {
+    width: 296px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+}
+
+@media only screen and (max-width: 600px) {
+  #viewDiv .esri-popup.esri-popup--is-docked .esri-popup__main-container {
+    width: 100%;
+    padding-bottom: 30px;       
+  }
+}
