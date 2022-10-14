@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18265836-5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'ENTER GOOGLE ANALYTIC HERE');
+    </script> -->
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <title>Dutton's Atlas 3D</title>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://js.arcgis.com/4.24/esri/themes/light/main.css" />
-    
     <link rel="stylesheet" href="style.css">
 
     <!--Google font stylesheet; Adding "preconnect loads the Google font files faster"-->
@@ -25,50 +33,48 @@
   </head>
 
   <body>
-    <!-- Create navbar and create hamburger menu on mobile -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="d-flex flex-grow-1">
-            <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
-            <!-- Logo and text display on large+ screens only -->
-            <a class="navbar-brand d-none d-lg-block" href="https://duttons-atlas-asu.hub.arcgis.com/">
-                <img id="logo" img src="img/asu_azhumanities_logo.png" height="35" class="d-inline-block align-center" alt="ASU AZ Humanties logo" >
-                <span>Dutton's Atlas 3D</span>
-                <!-- Can use code below for 2 line title -->
-                <!-- <span>Dutton's Atlas Project<b>3D Visualization</b></span> -->
-            </a>
-            <!-- Logo and text display on medium screens only -->
-            <a class="navbar-brand d-none d-md-block d-lg-none" href="https://duttons-atlas-asu.hub.arcgis.com/">
-                <img id="logo" img src="img/asu_azhumanities_logo.png" height="35" class="d-inline-block align-center" alt="ASU AZ Humanties logo">
-                <span>Dutton's Atlas 3D</span>
-            </a>
-            <!-- Logo and text display on small and under screens only -->
-            <a class="navbar-brand d-md-none" href="https://duttons-atlas-asu.hub.arcgis.com/">
-                <!-- <img src="img/asu_azhumanities_logo.png" alt="logo"> -->
-                Dutton's Atlas 3D
-            </a>
-            <div class="w-100 text-end">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
+  <!-- Create navbar and create hamburger menu on mobile -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light py-0">
+    <div class="d-flex flex-grow-1">
+        <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+        <!-- Logo and text display on large+ screens only -->
+        <a class="navbar-brand d-none d-lg-block" href="https://duttons-atlas-asu.hub.arcgis.com/">
+            <img id="logo" img src="img/asu_azhumanities_logo.png" height="35" class="d-inline-block align-center" alt="ASU AZ Humanties logo" >
+            <span>Dutton's Atlas 3D</span>
+            <!-- Can use code below for 2 line title -->
+            <!-- <span>Dutton's Atlas Project<b>3D Visualization</b></span> -->
+        </a>
+        <!-- Logo and text display on medium screens only -->
+        <a class="navbar-brand d-none d-md-block d-lg-none" href="https://duttons-atlas-asu.hub.arcgis.com/">
+            <img id="logo" img src="img/asu_azhumanities_logo.png" height="35" class="d-inline-block align-center" alt="ASU AZ Humanties logo">
+            <span>Dutton's Atlas 3D</span>
+        </a>
+        <!-- Logo and text display on small and under screens only -->
+        <a class="navbar-brand d-none d-sm-block d-md-none" href="https://duttons-atlas-asu.hub.arcgis.com/">
+            Dutton's Atlas 3D
+        </a>
+        <div class="w-100 text-end">
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
-        <div class="collapse navbar-collapse flex-grow-1 text-end" id="navbarNav">
-            <ul class="navbar-nav ms-auto flex-nowrap">
-                <li class="nav-item">
-                    <a class="nav-link" href=" https://geospatial.asu.edu" target="_blank" rel="noopener">Map and Geospatial Hub</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://duttons-atlas-asu.hub.arcgis.com/" target="_blank" rel="noopener">Dutton's Atlas Project</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://geodata-asu.hub.arcgis.com/" target="_blank" rel="noopener">ASU GeoData</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://lib.asu.edu/geo/services" target="_blank" rel="noopener">Submit a Service Request</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    </div>
+    <div class="collapse navbar-collapse flex-grow-1 text-end" id="navbarNav">
+        <ul class="navbar-nav ms-auto flex-nowrap">
+            <li class="nav-item active"><a href=" https://geospatial.asu.edu" class="nav-link" target="_blank" rel="noopener">Map and Geospatial Hub</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://duttons-atlas-asu.hub.arcgis.com/" target="_blank" rel="noopener">Dutton's Atlas Project</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://geodata-asu.hub.arcgis.com/" target="_blank" rel="noopener">ASU GeoData</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://lib.asu.edu/geo/services" target="_blank" rel="noopener">Submit a Service Request</a>
+            </li>
+        </ul>
+    </div>
+</nav>
 
     <!--Main Scene Container-->
     <div id="viewDiv"></div>
